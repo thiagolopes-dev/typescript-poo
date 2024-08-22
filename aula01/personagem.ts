@@ -38,10 +38,7 @@ while (option != 9) {
     }
 }
 
-
-
-
-// FORMA 2 e 3
+// FORMA 2
 // class Personagem {
 //     nome: string = 'Vedetta';
 //     energia: number = 10;
@@ -60,15 +57,40 @@ while (option != 9) {
 // person.energia = 30;
 // console.log('Personagem', person);
 
-// FORMA 4
+// FORMA 3
 // class Personagem {
-//     constructor() {
-// public nome: string,
-// public energia: number,
-// public ataque: number,
-// public vida: number,
-// public defesa: number
+//     public nome: string;
+//     public energia: number;
+//     public ataque: number;
+//     public vida: number;
+//     public defesa: number;
+
+//     constructor(nome: string, energia: number, ataque: number, vida: number, defesa: number) {
+//         this.nome = nome;
+//         this.energia = energia;
+//         this.ataque = ataque;
+//         this.vida = vida;
+//         this.defesa = defesa;
 //     }
 // }
-// goku = new Personagem('Goku 2', 90,80,70,60,50);
-// console.log("Personagem >>>" , goku); 
+
+// const goku = new Personagem('Goku 2', 90, 80, 70, 2);
+// console.log("Personagem >>>", goku);
+
+// FORMA 4
+// class Personagem {
+//     public nome: string = '';
+//     public energia: number = 0;
+//     public ataque: number = 0;
+//     public vida: number = 0;
+//     public defesa: number = 0;
+// }
+
+// const goku = new Personagem();
+// goku.nome = 'Goku 2';
+// goku.energia = 90;
+// goku.ataque = 80;
+// goku.vida = 70;
+// goku.defesa = 50;
+
+// console.log("Personagem >>>", goku);
